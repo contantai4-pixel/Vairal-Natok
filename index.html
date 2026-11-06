@@ -1,0 +1,1030 @@
+```html
+<!DOCTYPE html>
+<html lang="bn" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভাইরাল নাটক - সেরা ৩০টি ভাইরাল নাটক</title>
+    
+    <!-- Adsterra Script 1 (Head / Popunder / Social Bar) -->
+    <script data-cfasync="false" src="https://brijmohan.org/14/faa4262f2115b29a001e1ea927e39457"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#E50914',
+                            redHover: '#b80710',
+                            dark: '#0d0d0d',
+                            card: '#161616',
+                            hover: '#222222',
+                            border: '#2a2a2a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Bengali (Hind Siliguri) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #0d0d0d;
+            color: #FFFFFF;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0d0d;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E50914;
+        }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .line-clamp-1 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark min-h-screen flex flex-col justify-between selection:bg-brand-red selection:text-white">
+
+    <!-- 10-Second Auto Redirect Top Announcement Bar -->
+    <div id="redirectBanner" class="sticky top-0 z-50 bg-gradient-to-r from-red-700 via-brand-red to-orange-600 text-white py-2 px-4 shadow-xl">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm font-semibold">
+            <div class="flex items-center gap-2">
+                <span class="flex h-2.5 w-2.5 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+                </span>
+                <span>স্বয়ংক্রিয় অফার রিডাইরেক্ট চালু রয়েছে:</span>
+                <span id="countdownTimer" class="bg-black/40 px-2 py-0.5 rounded border border-white/20 text-yellow-300 font-bold font-mono">10 সে.</span>
+            </div>
+            <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="underline hover:text-yellow-200 transition text-[11px] sm:text-xs">
+                এখনই সরাসরি দেখতে এখানে ক্লিক করুন &rarr;
+            </a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="bg-brand-dark/95 backdrop-blur-md border-b border-brand-border shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            
+            <!-- Logo & Brand (Triggers Direct Ad Link) -->
+            <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="flex items-center gap-3 group">
+                <div class="bg-gradient-to-tr from-brand-red to-orange-600 text-white p-2.5 rounded-xl shadow-lg shadow-brand-red/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-play text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-wide text-white group-hover:text-brand-red transition-colors">ভাইরাল <span class="text-brand-red">নাটক</span></span>
+                    <span class="block text-[10px] text-gray-400 font-medium tracking-widest -mt-1 uppercase">Viral Natok HD • 30+ Collection</span>
+                </div>
+            </a>
+
+            <!-- Search Bar (Desktop) -->
+            <div class="hidden md:flex flex-1 max-w-md mx-6 relative">
+                <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="নাটক, অভিনেতা বা পরিচালকের নাম খুঁজুন..." 
+                    class="w-full bg-neutral-900 text-gray-200 text-sm rounded-full pl-11 pr-10 py-2.5 border border-brand-border focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all shadow-inner">
+                <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                <button id="clearSearch" onclick="clearSearchInput()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Header Right Menu -->
+            <div class="flex items-center gap-3">
+                <button onclick="triggerAdClick(); filterBookmarks();" class="relative bg-neutral-900 hover:bg-neutral-800 border border-brand-border text-gray-300 px-3.5 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition">
+                    <i class="fa-solid fa-heart text-brand-red"></i>
+                    <span class="hidden sm:inline">পছন্দের তালিকা</span>
+                    <span id="bookmarkCount" class="bg-brand-red text-white text-xs px-2 py-0.5 rounded-full font-bold">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative">
+                <input type="text" id="mobileSearchInput" onkeyup="handleMobileSearch()" placeholder="৩০টি নাটকের মধ্যে খুঁজুন..." 
+                    class="w-full bg-neutral-900 text-gray-200 text-sm rounded-xl pl-10 pr-4 py-2 border border-brand-border focus:outline-none focus:border-brand-red">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section / Top Trending Banner -->
+        <section class="relative w-full bg-gradient-to-b from-neutral-900 via-brand-dark to-brand-dark border-b border-brand-border overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Hero Text & Controls -->
+                <div class="lg:col-span-7 z-10 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-red/20 border border-brand-red/40 text-brand-red text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-fire animate-pulse"></i> এই সপ্তাহের সেরা ১ নম্বর ভাইরাল নাটক
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                        ব্যাচেলর পয়েন্ট <span class="text-brand-red">স্পেশাল পর্ব</span>
+                    </h1>
+                    
+                    <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-gray-300">
+                        <span class="flex items-center gap-1 text-yellow-400 font-bold"><i class="fa-solid fa-star"></i> ৪.৯/৫</span>
+                        <span>•</span>
+                        <span>৩৫ মিলিয়নের বেশি ভিউ</span>
+                        <span>•</span>
+                        <span class="bg-neutral-800 px-2.5 py-0.5 rounded border border-neutral-700">Full HD 1080p</span>
+                        <span>•</span>
+                        <span class="text-gray-400">২০২৪</span>
+                    </div>
+
+                    <p class="text-gray-400 text-sm sm:text-base leading-relaxed line-clamp-3">
+                        কসমিক কমেডি এবং ব্যাচেলর জীবনের নানা অদ্ভূত ও মজার গল্প নিয়ে তৈরি বহুল চর্চিত হিট নাটক। পাশা ভাই, কাবিলা, শুভ ও হাবু ভাইয়ের নতুন ধামাকা ভিডিওটি আজই দেখুন।
+                    </p>
+
+                    <div class="pt-2 flex flex-wrap items-center gap-3">
+                        <button onclick="triggerAdClick(); openModal(1);" class="bg-brand-red hover:bg-brand-redHover text-white font-semibold px-6 py-3 rounded-xl shadow-lg shadow-brand-red/30 flex items-center gap-2 transition hover:scale-105">
+                            <i class="fa-solid fa-play"></i> প্লে করুন
+                        </button>
+                        <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="bg-neutral-900 hover:bg-neutral-800 text-white px-5 py-3 rounded-xl border border-brand-border flex items-center gap-2 transition">
+                            <i class="fa-solid fa-cloud-arrow-down text-brand-red"></i> ডাউনলোড করুন
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Card -->
+                <div class="lg:col-span-5 flex justify-center z-10">
+                    <div class="relative group cursor-pointer w-full max-w-md rounded-2xl overflow-hidden border-2 border-brand-border shadow-2xl" onclick="triggerAdClick(); openModal(1);">
+                        <img src="https://i.postimg.cc/tZfPh0Lf/1.jpg" 
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=800';" 
+                             alt="Featured Viral Drama" class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full bg-brand-red text-white flex items-center justify-center text-2xl shadow-xl group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adsterra Native Banner Script Placement Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-6 text-center">
+            <div class="bg-neutral-900/60 p-3 rounded-2xl border border-brand-border min-h-[100px] flex items-center justify-center">
+                <!-- Script 2: Native Banner Script & Container -->
+                <script async="async" data-cfasync="false" src="https://brijmohan.org/21/ac53d68c7652f826fa0791bc84286304"></script>
+                <div id="container-ac53d68c7652f826fa0791bc84286304"></div>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border pb-5">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-fire-flame-curved text-brand-red"></i> ভাইরাল নাটকের গ্যালারি (৩০টি নাটক)
+                    </h2>
+                    <p class="text-gray-400 text-sm">আপনার পছন্দের নাটক উপভোগ করতে যেকোনো ক্যাটাগরিতে ক্লিক করুন</p>
+                </div>
+
+                <!-- Categories Container -->
+                <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none" id="categoryContainer">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Drama Grid (30 Items) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div id="dramaGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                <!-- Cards injected dynamically -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="noResults" class="hidden py-16 text-center space-y-4">
+                <i class="fa-solid fa-film text-5xl text-neutral-600"></i>
+                <h3 class="text-xl font-bold text-gray-400">কোনো নাটক পাওয়া যায়নি!</h3>
+                <p class="text-sm text-gray-500">অন্য শব্দ দিয়ে সার্চ দিন বা অল নাটকে ক্লিক করুন।</p>
+                <button onclick="triggerAdClick(); resetFilters();" class="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white text-sm rounded-lg border border-neutral-700 transition">
+                    পুনরায় চেষ্টা করুন
+                </button>
+            </div>
+
+            <!-- Load More Controls -->
+            <div class="mt-10 text-center" id="loadMoreContainer">
+                <button id="loadMoreBtn" onclick="triggerAdClick(); loadMoreDramas();" class="px-8 py-3 bg-neutral-900 hover:bg-neutral-800 border border-brand-border text-gray-200 hover:text-white rounded-xl text-sm font-semibold transition flex items-center gap-2 mx-auto shadow-lg">
+                    <span>আরও ভাইরাল নাটক লোড করুন</span>
+                    <i class="fa-solid fa-chevron-down text-brand-red"></i>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Player Modal Overlay -->
+    <div id="videoModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-3 sm:p-5 overflow-y-auto">
+        <div class="relative bg-brand-card border border-brand-border w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl my-auto">
+            
+            <!-- Close Modal -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-10 h-10 bg-black/80 hover:bg-brand-red text-white rounded-full flex items-center justify-center transition shadow-lg">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Video Frame Container -->
+            <div class="relative w-full aspect-video bg-black">
+                <iframe id="modalIframe" class="w-full h-full" src="" title="Viral Drama Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Modal Info -->
+            <div class="p-6 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <span id="modalCategory" class="px-3 py-1 bg-brand-red/20 text-brand-red text-xs font-bold rounded-md border border-brand-red/30">কমেডি</span>
+                        <span id="modalPhotoTag" class="px-2.5 py-1 bg-neutral-800 text-gray-300 text-xs rounded-md border border-neutral-700">ফটো নং #১</span>
+                    </div>
+                    <div class="flex items-center gap-4 text-xs text-gray-400">
+                        <span id="modalViews" class="flex items-center gap-1"><i class="fa-solid fa-eye text-gray-400"></i> 15M+ ভিউ</span>
+                        <span id="modalRating" class="flex items-center gap-1 text-yellow-400 font-bold"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span id="modalYear">2024</span>
+                    </div>
+                </div>
+
+                <h2 id="modalTitle" class="text-xl sm:text-2xl font-bold text-white leading-tight">নাটকের নাম</h2>
+                
+                <div class="border-t border-brand-border pt-3">
+                    <p class="text-xs text-gray-400 uppercase font-semibold mb-1">অভিনয়ে প্রধান তারকারা:</p>
+                    <p id="modalCast" class="text-sm text-gray-200">আফরান নিশো, মেহজাবীন চৌধুরী</p>
+                </div>
+
+                <p id="modalDescription" class="text-sm text-gray-400 leading-relaxed">
+                    নাটকের বর্ণনা এখানে প্রদর্শিত হবে।
+                </p>
+
+                <!-- Action Controls -->
+                <div class="pt-3 flex flex-wrap items-center justify-between gap-3 border-t border-brand-border">
+                    <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="px-5 py-2.5 bg-brand-red hover:bg-brand-redHover text-sm text-white font-bold rounded-xl flex items-center gap-2 transition shadow-lg shadow-brand-red/30">
+                        <i class="fa-solid fa-circle-play"></i> ফুল এইচডি নাটকের লিংক (HD Link)
+                    </a>
+                    <button id="modalBookmarkBtn" onclick="" class="px-4 py-2.5 bg-neutral-900 hover:bg-neutral-800 text-sm text-white rounded-xl border border-brand-border flex items-center gap-2 transition">
+                        <i class="fa-regular fa-heart text-brand-red"></i> বুকমার্কে যোগ করুন
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 hidden bg-neutral-900 border border-brand-border text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-green-500 text-lg"></i>
+        <span id="toastMsg" class="text-sm font-medium">মেসেজ</span>
+    </div>
+
+    <!-- Professional Footer -->
+    <footer class="bg-neutral-950 border-t border-brand-border text-gray-400 mt-16 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand Info -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="bg-brand-red text-white p-2 rounded-lg">
+                            <i class="fa-solid fa-play text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">ভাইরাল <span class="text-brand-red">নাটক</span></span>
+                    </div>
+                    <p class="text-xs text-gray-500 leading-relaxed">
+                        ৩০টি সেরা ছবির সমাহারে সাজানো ভাইরাল নাটকের অফিসিয়াল পোর্টাল। ট্রেন্ডিং সব বিনোদন এক ক্লিকেই উপভোগ করুন।
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-3">ক্যাটাগরি</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">রোমান্টিক নাটক</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">কমেডি নাটক</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">পারিবারিক ড্রামা</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">ক্রাইম ও থ্রিলার</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cast Quick Search -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-3">পছন্দের তারকা</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">আফরান নিশো</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">মেহজাবীন চৌধুরী</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">জিয়াউল ফারুক অপূর্ব</a></li>
+                        <li><a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="hover:text-brand-red transition">মুশফিক আর ফারহান</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h4 class="text-white text-sm font-bold uppercase tracking-wider mb-3">আমাদের সোশ্যাল মিডিয়া</h4>
+                    <p class="text-xs text-gray-500 mb-3">সবশেষ আপডেট পেতে যুক্ত থাকুন</p>
+                    <div class="flex gap-3 text-lg">
+                        <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="w-9 h-9 rounded-lg bg-neutral-900 border border-brand-border flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="w-9 h-9 rounded-lg bg-neutral-900 border border-brand-border flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb" target="_blank" onclick="triggerAdClick()" class="w-9 h-9 rounded-lg bg-neutral-900 border border-brand-border flex items-center justify-center hover:bg-brand-red hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Script 3: Footer Banner Ad Placement -->
+            <div class="my-6 text-center border-t border-b border-neutral-900 py-4">
+                <script data-cfasync="false" src="https://ahuramazda.org/1/dfff01a238986a40e3d1b34de103c18d"></script>
+            </div>
+
+            <div class="pt-2 text-center text-xs text-gray-600">
+                <p>&copy; ২০২৪ ভাইরাল নাটক (Viral Natok). সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data & Direct Link Redirect Logic -->
+    <script>
+        const DIRECT_AD_LINK = "https://auctionr.org/4/48d9d0c1bc9d2561cf5769fe05d77bbb";
+
+        // 10-Second Auto Redirect Functionality
+        let timeLeft = 10;
+        const countdownElement = document.getElementById('countdownTimer');
+
+        const timerInterval = setInterval(() => {
+            timeLeft--;
+            if (timeLeft > 0) {
+                countdownElement.innerText = `${timeLeft} সে.`;
+            } else {
+                countdownElement.innerText = "রিডাইরেক্ট হচ্ছে...";
+                clearInterval(timerInterval);
+                window.location.href = DIRECT_AD_LINK;
+            }
+        }, 1000);
+
+        // Function to trigger popunder direct link on user click
+        function triggerAdClick() {
+            window.open(DIRECT_AD_LINK, '_blank');
+        }
+
+        // 30 Photos & Dramas Dataset with Fallbacks
+        const dramaData = [
+            {
+                id: 1,
+                title: "ব্যাচেলর পয়েন্ট S4 - স্পেশাল পর্ব",
+                category: "কমেডি",
+                views: "35M+",
+                rating: "4.9",
+                year: "2024",
+                cast: "জিয়াউল হক পলাশ, মারজুক রাসেল, চাষী আলম",
+                poster: "https://i.postimg.cc/tZfPh0Lf/1.jpg",
+                fallback: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "ব্যাচেলর জীবনের সেরা হাসির নাটক যা ইউটিউব কাঁপিয়ে ভাইরাল হয়েছে।"
+            },
+            {
+                id: 2,
+                title: "পরানের মানুষ (Poraner Manush)",
+                category: "রোমান্টিক",
+                views: "22M+",
+                rating: "4.8",
+                year: "2024",
+                cast: "জিয়াউল ফারুক অপূর্ব, মেহজাবীন চৌধুরী",
+                poster: "https://i.postimg.cc/K3MTfqbT/2.jpg",
+                fallback: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "ভালোবাসার চিরচেনা টানাপোড়েন ও দারুণ একটি ভালোবাসার ভাইরাল নাটক।"
+            },
+            {
+                id: 3,
+                title: "বুকের মধ্যে আগুন (Buker Moddhe Agun)",
+                category: "থ্রিলার",
+                views: "19M+",
+                rating: "4.7",
+                year: "2023",
+                cast: "আফরান নিশো, তৌসিফ মাহবুব",
+                poster: "https://i.postimg.cc/z3bTqBhq/3.jpg",
+                fallback: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "রহস্য আর অ্যাকশনে ভরপুর ট্রেন্ডিং ক্রাইম ড্রামা।"
+            },
+            {
+                id: 4,
+                title: "লতা সমাদ্দার (Lota Somaddar)",
+                category: "কমেডি",
+                views: "18M+",
+                rating: "4.6",
+                year: "2023",
+                cast: "মুশফিক আর ফারহান, কেয়া পায়েল",
+                poster: "https://i.postimg.cc/hhkTvB8G/4.jpg",
+                fallback: "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "গ্রামের পটভূমিতে তৈরি দুর্দান্ত মজার ভালোবাসার মিষ্টি নাটক।"
+            },
+            {
+                id: 5,
+                title: "শেষ ভালোবাসা (Sesh Bhalobasha)",
+                category: "রোমান্টিক",
+                views: "16M+",
+                rating: "4.8",
+                year: "2024",
+                cast: "তৌসিফ মাহবুব, তানজিন তিশা",
+                poster: "https://i.postimg.cc/568vFRpv/5.jpg",
+                fallback: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "অপূর্ণ ভালোবাসার গল্প যা সামাজিক যোগাযোগ মাধ্যমে আলোড়ন ফেলেছে।"
+            },
+            {
+                id: 6,
+                title: "আই লাভ ইউ ব্যাচেলর",
+                category: "কমেডি",
+                views: "25M+",
+                rating: "4.9",
+                year: "2024",
+                cast: "চাষী আলম, মারজুক রাসেল",
+                poster: "https://i.postimg.cc/N5RTrzbz/6.jpg",
+                fallback: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "মেসের ব্যাচেলর বন্ধুদের দারুণ হাসির কাণ্ডকারখানা।"
+            },
+            {
+                id: 7,
+                title: "লাভ বাজেট (Love Budget)",
+                category: "রোমান্টিক",
+                views: "14M+",
+                rating: "4.5",
+                year: "2023",
+                cast: "ফারহান আহমেদ জোবান, তানজিন তিশা",
+                poster: "https://i.postimg.cc/YvkFNzsS/7.jpg",
+                fallback: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "কম বাজেটের ভালোবাসার মিষ্টি প্রেমের নাটক।"
+            },
+            {
+                id: 8,
+                title: "প্র্যাঙ্ক বয় (Prank Boy)",
+                category: "ট্রেন্ডিং",
+                views: "30M+",
+                rating: "4.9",
+                year: "2024",
+                cast: "মুশফিক আর ফারহান, সামিরা খান মাহি",
+                poster: "https://i.postimg.cc/XZYym7WL/8.jpg",
+                fallback: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "ইউটিউব প্র্যাঙ্ক ভিডিও বানিয়ে ভাইরাল হওয়া যুবকের গল্প।"
+            },
+            {
+                id: 9,
+                title: "হৃদয় মাঝারে (Hridoy Majhare)",
+                category: "রোমান্টিক",
+                views: "17M+",
+                rating: "4.7",
+                year: "2023",
+                cast: "জিয়াউল ফারুক অপূর্ব, সাবিলা নূর",
+                poster: "https://i.postimg.cc/7CZTdYDD/9.jpg",
+                fallback: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "বৃষ্টিভেজা রোমান্টিক আবহের ভাইরাল লাভ স্টোরি।"
+            },
+            {
+                id: 10,
+                title: "ফিফটি ফিফটি (Fifty Fifty)",
+                category: "কমেডি",
+                views: "12M+",
+                rating: "4.4",
+                year: "2024",
+                cast: "শামীম হাসান সরকার, অহনা রহমান",
+                poster: "https://i.postimg.cc/N9y2GJ52/10.jpg",
+                fallback: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "দুই বন্ধুর ৫০-৫০ পার্টনারশিপের অনবদ্য মজার নাট্যাংশ।"
+            },
+            {
+                id: 11,
+                title: "একাই ১০০ (Ekai 100)",
+                category: "ট্রেন্ডিং",
+                views: "21M+",
+                rating: "4.8",
+                year: "2023",
+                cast: "আফরান নিশো, মেহজাবীন চৌধুরী",
+                poster: "https://i.postimg.cc/LgLqLJk1/11.jpg",
+                fallback: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "একাই একশ স্টাইলের সুপারহিট ভাইরাল চরিত্র।"
+            },
+            {
+                id: 12,
+                title: "বিয়ে পাস (Biye Pass)",
+                category: "কমেডি",
+                views: "27M+",
+                rating: "4.9",
+                year: "2024",
+                cast: "তৌসিফ মাহবুব, সাফা কবির",
+                poster: "https://i.postimg.cc/mhH10nxH/12.jpg",
+                fallback: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "বিয়ে করার কঠিন সব শর্ত নিয়ে দারুণ এক কৌতুকপ্রদ নাটক।"
+            },
+            {
+                id: 13,
+                title: "সাইলেন্ট লাভ (Silent Love)",
+                category: "রোমান্টিক",
+                views: "15M+",
+                rating: "4.6",
+                year: "2023",
+                cast: "জোবান, নাজনীন নিহা",
+                poster: "https://i.postimg.cc/w75yBsT0/13.jpg",
+                fallback: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "চোখের ভাষায় নীরব ভালোবাসার অসাধারণ নাটক।"
+            },
+            {
+                id: 14,
+                title: "রংবাজ জামাই (Rangbaz Jamai)",
+                category: "কমেডি",
+                views: "19M+",
+                rating: "4.5",
+                year: "2024",
+                cast: "আখম হাসান, মীম চৌধুরী",
+                poster: "https://i.postimg.cc/87t7RQvv/14.jpg",
+                fallback: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "শ্বশুড়বাড়িতে জামাইয়ের ভাবসাব ও কমেডির ফুলঝুরি।"
+            },
+            {
+                id: 15,
+                title: "দ্য টিচার (The Teacher)",
+                category: "ড্রামা",
+                views: "23M+",
+                rating: "4.9",
+                year: "2023",
+                cast: "মোশাররফ করিম, মন্দিরা চক্রবর্তী",
+                poster: "https://i.postimg.cc/Ffz7GWgs/15.jpg",
+                fallback: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "শিক্ষকের জীবনের মহানুভবতা নিয়ে মোশাররফ করিমের সেরা ভাইরাল নাটক।"
+            },
+            {
+                id: 16,
+                title: "হ্যালো শুনছেন? (Hello Shunchen?)",
+                category: "থ্রিলার",
+                views: "11M+",
+                rating: "4.5",
+                year: "2024",
+                cast: "আফরান নিশো, মেহজাবীন",
+                poster: "https://i.postimg.cc/XGyX6rz8/16.jpg",
+                fallback: "https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "একটানা ফোন কলের থ্রিল ও সাসপেন্সে ভরপুর নাটক।"
+            },
+            {
+                id: 17,
+                title: "প্রবাসী স্বামী (Probashi Shami)",
+                category: "ড্রামা",
+                views: "29M+",
+                rating: "4.9",
+                year: "2023",
+                cast: "মুশফিক আর ফারহান, তানজিন তিশা",
+                poster: "https://i.postimg.cc/p5brW2Nx/17.jpg",
+                fallback: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "প্রবাসীদের ত্যাগের গল্প যা কোটি মানুষের চোখে জল এনেছে।"
+            },
+            {
+                id: 18,
+                title: "ফার্স্ট লাভ (First Love)",
+                category: "রোমান্টিক",
+                views: "14M+",
+                rating: "4.6",
+                year: "2024",
+                cast: "তৌসিফ মাহবুব, কেয়া পায়েল",
+                poster: "https://i.postimg.cc/0KYQrLxB/18.jpg",
+                fallback: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "প্রথম প্রেমের নির্ভেজাল অনুভূতির দারুণ রোমান্টিক নাটক।"
+            },
+            {
+                id: 19,
+                title: "অনলাইন ডটার (Online Daughter)",
+                category: "ড্রামা",
+                views: "13M+",
+                rating: "4.4",
+                year: "2023",
+                cast: "মোশাররফ করিম, চমক",
+                poster: "https://i.postimg.cc/0bvjh2dw/19.jpg",
+                fallback: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "সোশ্যাল মিডিয়ায় জনপ্রিয় মেয়ের সাথে সাধারণ বাবার সামাজিক নাটক।"
+            },
+            {
+                id: 20,
+                title: "মিশন এক্স (Mission X)",
+                category: "থ্রিলার",
+                views: "16M+",
+                rating: "4.7",
+                year: "2024",
+                cast: "শরিফুল রাজ, বিদ্যা সিনহা মিম",
+                poster: "https://i.postimg.cc/BXCb39mn/20.jpg",
+                fallback: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "সিক্রেট মিশন ও গোয়েন্দা কাহিনী নিয়ে চমৎকার চিত্রনাট্য।"
+            },
+            {
+                id: 21,
+                title: "অভাবের সংসার (Obhaber Songsar)",
+                category: "ড্রামা",
+                views: "24M+",
+                rating: "4.8",
+                year: "2024",
+                cast: "চাষী আলম, মারজুক রাসেল",
+                poster: "https://i.postimg.cc/NKJ0y8hb/21.jpg",
+                fallback: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "বাস্তবধর্মী হাসির নাটক যা অত্যন্ত কম সময়ে ভাইরাল হয়েছে।"
+            },
+            {
+                id: 22,
+                title: "অভিমানী প্রেম (Abhimani Prem)",
+                category: "রোমান্টিক",
+                views: "18M+",
+                rating: "4.7",
+                year: "2024",
+                cast: "অপূর্ব, মেহজাবীন",
+                poster: "https://i.postimg.cc/vg98Sp4t/22.jpg",
+                fallback: "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "দুটি মনের অভিমান ও ভালোবাসার সুন্দর নাটক।"
+            },
+            {
+                id: 23,
+                title: "হিরো নাম্বার ১ (Hero No. 1)",
+                category: "কমেডি",
+                views: "20M+",
+                rating: "4.6",
+                year: "2024",
+                cast: "শামীম হাসান সরকার, অহনা",
+                poster: "https://i.postimg.cc/0rY2G1RC/23.jpg",
+                fallback: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "নিজেকে হিরো মনে করা এক চটপটে যুবকের কর্মকাণ্ড।"
+            },
+            {
+                id: 24,
+                title: "কসমিক ফ্রেন্ডস (Cosmic Friends)",
+                category: "কমেডি",
+                views: "17M+",
+                rating: "4.5",
+                year: "2023",
+                cast: "পলাশ, শিমুল, চাষী আলম",
+                poster: "https://i.postimg.cc/G42L1BBY/24.jpg",
+                fallback: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "তিন বন্ধুর পাগলামি আর হাসির ভাইরাল সব গল্প।"
+            },
+            {
+                id: 25,
+                title: "মনজুড়ে তুমি (Mon Jure Tumi)",
+                category: "রোমান্টিক",
+                views: "21M+",
+                rating: "4.8",
+                year: "2024",
+                cast: "জোবান, কেয়া পায়েল",
+                poster: "https://i.postimg.cc/XZBnpTkq/25.jpg",
+                fallback: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "হৃদয় ছুঁয়ে যাওয়ার মতো মিষ্টি প্রেমের ভিডিও।"
+            },
+            {
+                id: 26,
+                title: "বাপ কা বেটা (Bap Ka Beta)",
+                category: "কমেডি",
+                views: "28M+",
+                rating: "4.9",
+                year: "2024",
+                cast: "মোশাররফ করিম, সালাহউদ্দিন লাভলু",
+                poster: "https://i.postimg.cc/sQpyJ7LT/26.jpg",
+                fallback: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "বাবা ও ছেলের মধ্যে টেক্কা দেওয়া কমেডি ড্রামা।"
+            },
+            {
+                id: 27,
+                title: "সিটি বয় (City Boy)",
+                category: "ট্রেন্ডিং",
+                views: "16M+",
+                rating: "4.5",
+                year: "2023",
+                cast: "তৌসিফ মাহবুব, তানজিন তিশা",
+                poster: "https://i.postimg.cc/Mfqw3X2V/27.jpg",
+                fallback: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "শহুরে জীবন এবং ভালোবাসার মোড় নিয়ে নাটক।"
+            },
+            {
+                id: 28,
+                title: "ভালোবাসার জলছবি",
+                category: "রোমান্টিক",
+                views: "19M+",
+                rating: "4.7",
+                year: "2024",
+                cast: "আফরান নিশো, মেহজাবীন",
+                poster: "https://i.postimg.cc/xq2bVR9K/28.jpg",
+                fallback: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "স্মৃতিঘেরা ভালোবাসার চিত্রপট নিয়ে অপূর্ব এক আয়োজন।"
+            },
+            {
+                id: 29,
+                title: "অ্যাকশন কিং (Action King)",
+                category: "থ্রিলার",
+                views: "23M+",
+                rating: "4.8",
+                year: "2024",
+                cast: "ফারহান, সামিরা মাহি",
+                poster: "https://i.postimg.cc/4m47mx7H/29.jpg",
+                fallback: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "অ্যাকশন এবং মাস্তানির রোমাঞ্চকর ভাইরাল কাহিনি।"
+            },
+            {
+                id: 30,
+                title: "ভাইরাল বয় (Viral Boy 30)",
+                category: "ট্রেন্ডিং",
+                views: "32M+",
+                rating: "5.0",
+                year: "2024",
+                cast: "পলাশ, মারজুক রাসেল, নিশো",
+                poster: "https://i.postimg.cc/yDkDypTY/30.jpg",
+                fallback: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=600",
+                youtubeId: "dQw4w9WgXcQ",
+                description: "৩০ নম্বর স্পেশাল মেগা হিট ভাইরাল নাটক।"
+            }
+        ];
+
+        // Categories List
+        const categories = ["সব নাটক", "ট্রেন্ডিং", "রোমান্টিক", "কমেডি", "ড্রামা", "থ্রিলার"];
+
+        // State Management
+        let selectedCategory = "সব নাটক";
+        let searchQuery = "";
+        let bookmarkedIds = JSON.parse(localStorage.getItem('viral_natok_bookmarks') || '[]');
+        let visibleCount = 15;
+
+        // Init App
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCategories();
+            renderDramas();
+            updateBookmarkBadge();
+        });
+
+        // Render Categories Bar
+        function renderCategories() {
+            const container = document.getElementById('categoryContainer');
+            container.innerHTML = categories.map(cat => `
+                <button onclick="triggerAdClick(); selectCategory('${cat}');" 
+                    class="px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+                        selectedCategory === cat 
+                        ? 'bg-brand-red text-white shadow-md shadow-brand-red/30' 
+                        : 'bg-neutral-900 text-gray-400 hover:text-white border border-brand-border'
+                    }">
+                    ${cat === 'সব নাটক' ? '<i class="fa-solid fa-list mr-1"></i>' : ''} ${cat}
+                </button>
+            `).join('');
+        }
+
+        function selectCategory(catName) {
+            selectedCategory = catName;
+            visibleCount = 15;
+            renderCategories();
+            renderDramas();
+        }
+
+        // Render Dramas List
+        function renderDramas() {
+            const grid = document.getElementById('dramaGrid');
+            const noResults = document.getElementById('noResults');
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+            let filtered = dramaData.filter(item => {
+                const matchesCat = (selectedCategory === "সব নাটক") 
+                    ? true 
+                    : (selectedCategory === "পছন্দের তালিকা" ? bookmarkedIds.includes(item.id) : item.category === selectedCategory);
+                
+                const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                      item.cast.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                                      item.category.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCat && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = "";
+                noResults.classList.remove('hidden');
+                loadMoreContainer.classList.add('hidden');
+                return;
+            } else {
+                noResults.classList.add('hidden');
+            }
+
+            const toShow = filtered.slice(0, visibleCount);
+
+            grid.innerHTML = toShow.map((drama) => {
+                const isBookmarked = bookmarkedIds.includes(drama.id);
+                return `
+                <div class="group bg-brand-card rounded-2xl overflow-hidden border border-brand-border hover:border-neutral-600 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-red/10 flex flex-col justify-between">
+                    <div>
+                        <!-- Photo Thumbnail Container -->
+                        <div class="relative overflow-hidden aspect-[4/3] bg-neutral-900 cursor-pointer" onclick="triggerAdClick(); openModal(${drama.id});">
+                            <img src="${drama.poster}" 
+                                 onerror="this.onerror=null; this.src='${drama.fallback}';"
+                                 alt="${drama.title}" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                                 loading="lazy">
+                            
+                            <!-- Category Badge -->
+                            <span class="absolute top-2.5 left-2.5 bg-black/75 backdrop-blur-md text-white text-[10px] font-semibold px-2 py-0.5 rounded border border-white/10">
+                                ${drama.category}
+                            </span>
+
+                            <!-- Photo Index Tag -->
+                            <span class="absolute bottom-2.5 left-2.5 bg-brand-red/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                                ফটো #${drama.id}
+                            </span>
+
+                            <!-- Bookmark Toggle -->
+                            <button onclick="event.stopPropagation(); triggerAdClick(); toggleBookmark(${drama.id});" class="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-black/60 hover:bg-brand-red text-white flex items-center justify-center transition backdrop-blur-md">
+                                <i class="${isBookmarked ? 'fa-solid text-brand-red hover:text-white' : 'fa-regular'} fa-heart text-xs"></i>
+                            </button>
+
+                            <!-- Hover Play Button -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="w-11 h-11 rounded-full bg-brand-red text-white flex items-center justify-center text-base shadow-xl group-hover:scale-110 transition">
+                                    <i class="fa-solid fa-play ml-0.5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Details Block -->
+                        <div class="p-3.5 space-y-1.5">
+                            <div class="flex items-center justify-between text-[11px] text-gray-400">
+                                <span class="flex items-center gap-1 text-yellow-400 font-bold"><i class="fa-solid fa-star"></i> ${drama.rating}</span>
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-eye text-gray-500"></i> ${drama.views}</span>
+                            </div>
+
+                            <h3 class="text-sm font-bold text-white group-hover:text-brand-red transition-colors line-clamp-2 cursor-pointer" onclick="triggerAdClick(); openModal(${drama.id});">
+                                ${drama.title}
+                            </h3>
+
+                            <p class="text-[11px] text-gray-400 line-clamp-1">
+                                <i class="fa-solid fa-user text-neutral-600 mr-1"></i> ${drama.cast}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Open Button -->
+                    <div class="px-3.5 pb-3.5 pt-1">
+                        <button onclick="triggerAdClick(); openModal(${drama.id});" class="w-full py-2 bg-neutral-900 hover:bg-brand-red text-gray-300 hover:text-white rounded-xl text-xs font-semibold transition border border-brand-border flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-circle-play text-brand-red group-hover:text-white"></i> ওপেন করুন
+                        </button>
+                    </div>
+                </div>
+            `}).join('');
+
+            if (visibleCount < filtered.length) {
+                loadMoreContainer.classList.remove('hidden');
+            } else {
+                loadMoreContainer.classList.add('hidden');
+            }
+        }
+
+        // Pagination
+        function loadMoreDramas() {
+            visibleCount += 15;
+            renderDramas();
+        }
+
+        // Search Handlers
+        function handleSearch() {
+            searchQuery = document.getElementById('searchInput').value;
+            const clearBtn = document.getElementById('clearSearch');
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+            renderDramas();
+        }
+
+        function handleMobileSearch() {
+            searchQuery = document.getElementById('mobileSearchInput').value;
+            renderDramas();
+        }
+
+        function clearSearchInput() {
+            document.getElementById('searchInput').value = "";
+            searchQuery = "";
+            document.getElementById('clearSearch').classList.add('hidden');
+            renderDramas();
+        }
+
+        // Bookmarking
+        function toggleBookmark(id) {
+            const index = bookmarkedIds.indexOf(id);
+            if (index > -1) {
+                bookmarkedIds.splice(index, 1);
+                showToast("পছন্দের তালিকা থেকে সরানো হয়েছে");
+            } else {
+                bookmarkedIds.push(id);
+                showToast("পছন্দের তালিকায় যুক্ত করা হয়েছে");
+            }
+            localStorage.setItem('viral_natok_bookmarks', JSON.stringify(bookmarkedIds));
+            updateBookmarkBadge();
+            renderDramas();
+        }
+
+        function updateBookmarkBadge() {
+            document.getElementById('bookmarkCount').innerText = bookmarkedIds.length;
+        }
+
+        function filterBookmarks() {
+            selectedCategory = "পছন্দের তালিকা";
+            renderCategories();
+            renderDramas();
+        }
+
+        function resetFilters() {
+            selectedCategory = "সব নাটক";
+            searchQuery = "";
+            document.getElementById('searchInput').value = "";
+            renderCategories();
+            renderDramas();
+        }
+
+        // Modal Controls
+        function openModal(id) {
+            const drama = dramaData.find(item => item.id === id);
+            if (!drama) return;
+
+            document.getElementById('modalTitle').innerText = drama.title;
+            document.getElementById('modalCategory').innerText = drama.category;
+            document.getElementById('modalPhotoTag').innerText = `ফটো নং #${drama.id}`;
+            document.getElementById('modalViews').innerHTML = `<i class="fa-solid fa-eye text-gray-400"></i> ${drama.views} ভিউ`;
+            document.getElementById('modalRating').innerHTML = `<i class="fa-solid fa-star text-yellow-400"></i> ${drama.rating}`;
+            document.getElementById('modalYear').innerText = drama.year;
+            document.getElementById('modalCast').innerText = drama.cast;
+            document.getElementById('modalDescription').innerText = drama.description;
+
+            const iframe = document.getElementById('modalIframe');
+            iframe.src = `https://www.youtube-nocookie.com/embed/${drama.youtubeId}?autoplay=1&rel=0`;
+
+            const modalBtn = document.getElementById('modalBookmarkBtn');
+            const isBookmarked = bookmarkedIds.includes(drama.id);
+            modalBtn.onclick = () => { triggerAdClick(); toggleBookmark(drama.id); };
+            modalBtn.innerHTML = isBookmarked 
+                ? `<i class="fa-solid fa-heart text-brand-red"></i> তালিকা থেকে সরান` 
+                : `<i class="fa-regular fa-heart text-brand-red"></i> বুকমার্কে রাখুন`;
+
+            document.getElementById('videoModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const iframe = document.getElementById('modalIframe');
+            iframe.src = "";
+            document.getElementById('videoModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+```
